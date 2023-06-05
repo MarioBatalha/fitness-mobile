@@ -80,6 +80,51 @@ export const loseWeightExercises: Exercise[] = [
 	},
 ];
 
+export const gainMuscleExercises: Exercise[] = [
+	{
+		id: 1,
+		name: "Banco de barra",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/barbell-bench.gif"),
+		rep: 8,
+	},
+	{
+		id: 2,
+		name: "levantamento terra com barra",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/barbell-deadlift.gif"),
+		rep: 8,
+	},
+	{
+		id: 3,
+		name: "Agachamento com barra",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/barbell-squats.gif"),
+		rep: 8,
+	},
+	{
+		id: 4,
+		name: "Flexão",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/pushup.gif"),
+		rep: 8,
+	},
+	{
+		id: 5,
+		name: "Puxar para cima",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/pullup.gif"),
+		rep: 8,
+	},
+	{
+		id: 6,
+		name: "Agachamento cálice",
+		time: "5 min",
+		image: require("../assets/images/exercises/gain-muscle/dumbbell-goblet.gif"),
+		rep: 8,
+	},
+];
+
 export interface Workout {
 	id: number;
 	name: string;
@@ -99,9 +144,9 @@ export const workouts: Workout[] = [
 		name: "Perda de peso",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gym-man.jpg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 4,
-		minutes: 50,
+		minutes: 135,
 		calories: 2100,
 		description:
 			"Perder peso refere-se ao processo de redução do peso corporal, geralmente com o objetivo de alcançar uma composição corporal mais saudável. Envolve uma combinação de mudanças na dieta, atividade física e adoção de um estilo de vida sustentável.",
@@ -111,7 +156,7 @@ export const workouts: Workout[] = [
 		name: "Ganhar massa muscular",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gain-muscle.jpeg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -123,7 +168,7 @@ export const workouts: Workout[] = [
 		name: "Ficar desfiado",
 		coach: "Beatriz Ventura",
 		image: require("../assets/images/workouts/get-skredded.jpeg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 45,
 		calories: 150,
@@ -135,7 +180,7 @@ export const workouts: Workout[] = [
 		name: "Corpo inteiro",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/fit-woman.jpeg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -147,7 +192,7 @@ export const workouts: Workout[] = [
 		name: "Jiu-Jitsu",
 		coach: "Vanio Bernardo",
 		image: require("../assets/images/workouts/jiu-jitsu.jpg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -159,7 +204,7 @@ export const workouts: Workout[] = [
 		name: "Kickbox",
 		coach: "Edgar",
 		image: require("../assets/images/workouts/kickbox.jpg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 200,
@@ -171,7 +216,7 @@ export const workouts: Workout[] = [
 		name: "Judo",
 		coach: "Nakamura",
 		image: require("../assets/images/workouts/judo.jpg"),
-		loseWeightExercises,
+		gainMuscleExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
