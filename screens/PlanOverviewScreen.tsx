@@ -153,7 +153,7 @@ const PlanOverviewScreen: React.FC<Props> = ({
                     marginRight: Spacing.margin.base,
                   }}
                 >
-                  {workout.gainMuscleExercises.length}
+                  {workout.loseWeightExercises.length}
                 </AppText>
                 <AppText
                   style={{
@@ -227,10 +227,10 @@ const PlanOverviewScreen: React.FC<Props> = ({
             fontFamily: Font["poppins-semiBold"],
           }}
         >
-          Exercícios ({workout.gainMuscleExercises.length})
+          Exercícios ({workout.loseWeightExercises.length})
         </AppText>
 
-        {workout.gainMuscleExercises.map((exercise) => (
+        {workout.loseWeightExercises.map((exercise) => (
           <TouchableOpacity
             style={{
               backgroundColor: Colors.primary,
