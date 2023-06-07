@@ -153,7 +153,7 @@ const PlanOverviewScreen: React.FC<Props> = ({
                     marginRight: Spacing.margin.base,
                   }}
                 >
-                  {workout.fullBodyExercises.length}
+                  {workout.jiuJitsuExercises.length}
                 </AppText>
                 <AppText
                   style={{
@@ -227,10 +227,10 @@ const PlanOverviewScreen: React.FC<Props> = ({
             fontFamily: Font["poppins-semiBold"],
           }}
         >
-          Exercícios ({workout.fullBodyExercises.length})
+          Exercícios ({workout.jiuJitsuExercises.length})
         </AppText>
 
-        {workout.fullBodyExercises.map((exercise) => (
+        {workout.jiuJitsuExercises.map((exercise) => (
           <TouchableOpacity
             style={{
               backgroundColor: Colors.primary,
