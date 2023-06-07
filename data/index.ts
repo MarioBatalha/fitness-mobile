@@ -410,6 +410,73 @@ export const judoExercises: Exercise[] = [
 		},
 ];
 
+export const kickbocExercises: Exercise[] = [
+	{
+			id: 1,
+			name: "Braços",
+			time: "5 min",
+			image: require("../assets/images/exercises/jiu-jitsu/arms.gif"),
+			rep: 50,
+		},
+			{
+			id: 2,
+			name: "Pernas",
+			time: "5 min",
+			image: require("../assets/images/exercises/jiu-jitsu/butt-kicks.gif"),
+			rep: 50,
+		},
+			{
+			id: 3,
+			name: "Joelhos altos",
+			time: "5 min",
+			image: require("../assets/images/exercises/jiu-jitsu/high-knee.gif"),
+			rep: 20,
+		},
+		{
+			id: 4,
+			name: "Back kick",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/back-kick.gif"),
+			rep: 10,
+		},
+		{
+			id: 5,
+			name: "Cross",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/cross.gif"),
+			rep: 10,
+		},
+		{
+			id: 6,
+			name: "Head kick",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/head-kick.gif"),
+			rep: 10,
+		},
+		{
+			id: 7,
+			name: "Jab",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/jab.gif"),
+			rep: 10,
+		},
+		{
+			id: 8,
+			name: "Power jack",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/power-jack.gif"),
+			rep: 10,
+		},
+		{
+			id: 9,
+			name: "Punch",
+			time: "5 min",
+			image: require("../assets/images/exercises/kickbox/punch.gif"),
+			rep: 10,
+		},
+];
+
+
 export interface Workout {
 	id: number;
 	name: string;
@@ -429,7 +496,7 @@ export const workouts: Workout[] = [
 		name: "Perda de peso",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gym-man.jpg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 4,
 		minutes: 135,
 		calories: 2100,
@@ -441,7 +508,7 @@ export const workouts: Workout[] = [
 		name: "Ganhar massa muscular",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gain-muscle.jpeg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -453,7 +520,7 @@ export const workouts: Workout[] = [
 		name: "Ficar desfiado",
 		coach: "Beatriz Ventura",
 		image: require("../assets/images/workouts/get-skredded.jpeg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 45,
 		calories: 150,
@@ -465,7 +532,7 @@ export const workouts: Workout[] = [
 		name: "Corpo inteiro",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/fit-woman.jpeg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -477,7 +544,7 @@ export const workouts: Workout[] = [
 		name: "Jiu-Jitsu",
 		coach: "Vanio Bernardo",
 		image: require("../assets/images/workouts/jiu-jitsu.jpg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -489,7 +556,7 @@ export const workouts: Workout[] = [
 		name: "Kickbox",
 		coach: "Edgar",
 		image: require("../assets/images/workouts/kickbox.jpg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 200,
@@ -501,7 +568,7 @@ export const workouts: Workout[] = [
 		name: "Judo",
 		coach: "Nakamura",
 		image: require("../assets/images/workouts/judo.jpg"),
-		judoExercises,
+		kickbocExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -509,7 +576,6 @@ export const workouts: Workout[] = [
 			"O judô é uma arte marcial japonesa moderna e um esporte de combate que se concentra em arremessos, técnicas de luta e submissão.",
 	},
 ];
-
 interface Plan {
 	id: number;
 	name: string;
