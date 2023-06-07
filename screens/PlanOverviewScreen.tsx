@@ -153,7 +153,7 @@ const PlanOverviewScreen: React.FC<Props> = ({
                     marginRight: Spacing.margin.base,
                   }}
                 >
-                  {workout.getSkreddedExercises.length}
+                  {workout.fullBodyExercises.length}
                 </AppText>
                 <AppText
                   style={{
@@ -227,10 +227,10 @@ const PlanOverviewScreen: React.FC<Props> = ({
             fontFamily: Font["poppins-semiBold"],
           }}
         >
-          Exercícios ({workout.getSkreddedExercises.length})
+          Exercícios ({workout.fullBodyExercises.length})
         </AppText>
 
-        {workout.getSkreddedExercises.map((exercise) => (
+        {workout.fullBodyExercises.map((exercise) => (
           <TouchableOpacity
             style={{
               backgroundColor: Colors.primary,

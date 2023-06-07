@@ -191,6 +191,59 @@ export const getSkreddedExercises: Exercise[] = [
 	}
 	];
 
+	export const fullBodyExercises: Exercise[] = [
+	{
+		id: 1,
+		name: "Burpees",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/burpees.gif"),
+		rep: 8,
+	},
+	{
+		id: 2,
+		name: "Ciclismo",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/cycling.gif"),
+		rep: 8,
+	},
+	{
+		id: 3,
+		name: "Lunges",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/lunges.gif"),
+		rep: 8,
+	},
+	{
+		id: 4,
+		name: "Flexões",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/pushup.gif"),
+		rep: 8,
+	},
+	{
+		id: 5,
+		name: "Correr",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/running.gif"),
+		rep: 8,
+	},
+	{
+		id: 6,
+		name: "Agachamento",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/squats.gif"),
+		rep: 8,
+	},
+	{
+		id: 7,
+		name: "Subir escadas",
+		time: "5 min",
+		image: require("../assets/images/exercises/full-body/stair-climbing.gif"),
+		rep: 8,
+	},
+];
+
+
 export interface Workout {
 	id: number;
 	name: string;
@@ -210,7 +263,7 @@ export const workouts: Workout[] = [
 		name: "Perda de peso",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gym-man.jpg"),
-		getSkreddedExercises,
+		fullBodyExercises,
 		rating: 4,
 		minutes: 135,
 		calories: 2100,
@@ -222,7 +275,7 @@ export const workouts: Workout[] = [
 		name: "Ganhar massa muscular",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/gain-muscle.jpeg"),
-	getSkreddedExercises,
+	fullBodyExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -234,7 +287,7 @@ export const workouts: Workout[] = [
 		name: "Ficar desfiado",
 		coach: "Beatriz Ventura",
 		image: require("../assets/images/workouts/get-skredded.jpeg"),
-		getSkreddedExercises,
+		fullBodyExercises,
 		rating: 5,
 		minutes: 45,
 		calories: 150,
@@ -246,7 +299,7 @@ export const workouts: Workout[] = [
 		name: "Corpo inteiro",
 		coach: "Paulo Bizerra",
 		image: require("../assets/images/workouts/fit-woman.jpeg"),
-		getSkreddedExercises,
+		fullBodyExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -258,7 +311,7 @@ export const workouts: Workout[] = [
 		name: "Jiu-Jitsu",
 		coach: "Vanio Bernardo",
 		image: require("../assets/images/workouts/jiu-jitsu.jpg"),
-		getSkreddedExercises,
+		fullBodyExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
@@ -270,7 +323,7 @@ export const workouts: Workout[] = [
 		name: "Kickbox",
 		coach: "Edgar",
 		image: require("../assets/images/workouts/kickbox.jpg"),
-	getSkreddedExercises,
+	fullBodyExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 200,
@@ -282,7 +335,7 @@ export const workouts: Workout[] = [
 		name: "Judo",
 		coach: "Nakamura",
 		image: require("../assets/images/workouts/judo.jpg"),
-		getSkreddedExercises,
+		fullBodyExercises,
 		rating: 5,
 		minutes: 60,
 		calories: 50,
