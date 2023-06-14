@@ -83,7 +83,7 @@ const SignupScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 					style={{ width: 400, margin: 10 }}
 					onPress={handleSignup}
 				>
-					Entrar
+					Registrar
 				</Button>
 			</View>
 			<TouchableOpacity
