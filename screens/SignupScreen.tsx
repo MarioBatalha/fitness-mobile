@@ -12,13 +12,10 @@ import Button from "../components/Button";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 
-type Props = NativeStackScreenProps<RootStackParamList, "Login">;
+type Props = NativeStackScreenProps<RootStackParamList, "Signup">;
 
-const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
-
-	
-	const handleLogin = () => navigate("Home");
-	const handleSignup = () => navigate("Signup");
+const SignupScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
+  const handleSignup = () => navigate("Signup")
 
 	return (
 		<Screen>
@@ -43,7 +40,7 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 					textAlign: "center",
 				}}
 			>
-				Bem-vindo de volta
+				Crie uma conta
 			</Text>
 			<Text
 				style={{
@@ -53,7 +50,7 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 					textAlign: "center",
 				}}
 			>
-				Estamos felizes em tê-lo de volta
+        Desfrute do melhor que temos para si.
 			</Text>
 			<View
 				style={{
@@ -62,12 +59,19 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 					justifyContent: "center",
 				}}
 			>
+      <Input
+					placeholder="Nome completo"
+					style={{ display: "flex" }}
+					keyboardType="email-address"
+				>
+					<Feather name="user" size={24} color={Colors.text} />
+				</Input>
 				<Input
 					placeholder="Email"
 					style={{ display: "flex" }}
 					keyboardType="email-address"
 				>
-					<Feather name="user" size={24} color={Colors.text} />
+					<MaterialIcons name="alternate-email" size={24} color={Colors.text} />
 				</Input>
 				<Input
 					placeholder="Palavra-passe"
@@ -77,13 +81,12 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 				</Input>
 				<Button
 					style={{ width: 400, margin: 10 }}
-					onPress={handleLogin}
+					onPress={handleSignup}
 				>
-					Entrar
+					Registrar
 				</Button>
 			</View>
 			<TouchableOpacity
-				onPress={handleSignup}
 				activeOpacity={0.7}
 				style={{
 					display: "flex",
@@ -94,25 +97,25 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 			>
 				<Text
 					style={{
-						fontSize: FontSize.base,
+						fontSize: FontSize.sm,
 						color: Colors.text,
 						fontFamily: Font["poppins-regular"],
 						textAlign: "center",
 						margin: 2,
 					}}
 				>
-					Não tem uma conta?
+					Contacte-nos para activar conta a
 				</Text>
 				<Text
 					style={{
-						fontSize: FontSize.base,
+						fontSize: FontSize.sm,
 						color: Colors.accent,
 						fontFamily: Font["poppins-regular"],
 						textAlign: "center",
 						margin: 2,
 					}}
 				>
-					Crie uma.
+					+244 945 169 676.
 				</Text>
 			</TouchableOpacity>
 			<TouchableOpacity
@@ -134,8 +137,7 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 						padding: 10,
 					}}
 				>
-					Usamos cookies, como (quase) todos os outros app. Você pode encontrar
-					todas as informações sobre isso em nossa política de privacidade.
+					Ao preencher este formulário, você concorda com nossos termos de serviço e política de privacidade.
 					<Text
 						style={{
 							fontSize: FontSize.xs,
@@ -152,4 +154,4 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 	);
 };
 
-export default LoginScreen;
+export default SignupScreen;

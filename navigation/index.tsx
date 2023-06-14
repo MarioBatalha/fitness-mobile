@@ -7,6 +7,7 @@ import PlanOverviewScreen from "../screens/PlanOverviewScreen";
 import HomeScreen from "../screens/HomeScreen";
 import OnBoardingScreen from "../screens/OnBoardingScreen";
 import LoginScreen from "../screens/LoginScreen";
+import SignupScreen from "../screens/SignupScreen";
 const theme = {
   ...DefaultTheme,
   colors: {
@@ -36,6 +37,7 @@ function RootNavigator() {
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="PlanOverview" component={PlanOverviewScreen} />
       <Stack.Screen name="Login" component={LoginScreen} />
+      <Stack.Screen name="Signup" component={SignupScreen} />
     </Stack.Navigator>
   );
 }
