@@ -67,7 +67,7 @@ const LoginScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
 					style={{ display: "flex" }}
 					keyboardType="email-address"
 				>
-					<Feather name="user" size={24} color={Colors.text} />
+					<MaterialIcons name="alternate-email" size={24} color={Colors.text} />
 				</Input>
 				<Input
 					placeholder="Palavra-passe"
