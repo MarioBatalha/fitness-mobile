@@ -12,6 +12,7 @@ export type RootStackParamList = {
   PlanOverview: { workout: Workout };
   OnBoarding: undefined;
   Login: undefined;
+  Signup: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
