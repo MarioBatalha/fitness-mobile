@@ -1,7 +1,6 @@
 import {
   Dimensions,
   ImageBackground,
-  StyleSheet,
   Text,
 } from "react-native";
 import React from "react";
@@ -19,7 +18,7 @@ type Props = NativeStackScreenProps<RootStackParamList, "OnBoarding">;
 const OnBoardingScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
   const { height } = Dimensions.get("window");
 
-  const handlePress = () => navigate("Home");
+  const handleStart = () => navigate("Login");
 
   return (
     <ImageBackground
@@ -58,12 +57,10 @@ const OnBoardingScreen: React.FC<Props> = ({ navigation: { navigate } }) => {
         >
          Fique em boa forma com o seu guia de treinos agora no seu telefone.
         </Text>
-        <Button onPress={handlePress}>Vamos começar</Button>
+        <Button onPress={handleStart}>Vamos começar</Button>
       </LinearGradient>
     </ImageBackground>
   );
 };
 
 export default OnBoardingScreen;
-
-const styles = StyleSheet.create({});
