@@ -23,6 +23,7 @@ interface Props {
 const Button: React.FC<Props> = ({ style, children, textStyle, onPress }) => {
   return (
     <TouchableOpacity
+      activeOpacity={0.7}
       onPress={onPress}
       style={[
         {

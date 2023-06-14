@@ -16,6 +16,7 @@ export default {
     xl: 50,
     // xxl = 70
     xxl: 70,
+    
   },
   margin: {
     // sm = 5
